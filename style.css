@@ -151,7 +151,7 @@ body, html {
 .home-text {
   text-align: center;
   position: absolute;
-  top: 43%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -164,7 +164,7 @@ body, html {
   color: white;
   background-color: #2f064e;
   border-radius: 50%;
-  margin-top: 25px;
+  margin-top: 30px;
   padding: 30px;
   cursor: pointer;
   display: inline-block;
@@ -259,7 +259,7 @@ body, html {
 .about-caption2 {
   position: absolute;
   left: 0;
-
+  bottom: ;
   width: 100%;
   text-align: center;
   color: rgb(27, 155, 255)
@@ -294,13 +294,18 @@ body {
 
 .car {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-  padding: 5px;
+  padding: 16px;
   text-align: center;
-  background-color: #4e0883;
+  background-color: #2f064e;
   margin: 10px;
-  height: 250px;
-  image height: 100%;
+  height: 400px;
+  color: white;
 }
+
+.car p {
+  color: white;
+}
+
 
 
 @media screen and (max-width: 1028px) {
@@ -337,7 +342,7 @@ section {
 .containerBeta {
   width: 80%;
   height: 80%;
-  background: white;
+  background: #010d1600;
   border-radius: 15px;
   padding: 20px;
   overflow-y: scroll;
@@ -349,13 +354,14 @@ section {
 
 .containerBeta form{
   width: 100%;
-  border: 1px solid rgb(82, 74, 235);
+  border: 1px solid white;
   border-radius: 4px;
   display: flex;
   flex-direction: row;
   align-items: center;
   object-position: 0%;
 }
+
 
 .containerBeta form input {
   border: none;
@@ -368,7 +374,8 @@ section {
 }
 
 .containerBeta form i{
-  padding-left: 10px;
+  padding-left: 5px;
+  color: white;
 }
 
 .beta {
@@ -382,13 +389,13 @@ section {
 }
 
 
-.product-list .car{
+.car-list .car{
   cursor: pointer;
   align-items: center;
 }
 
-.product-list .car img{
-  height: 70px;
+.car-list .car img{
+  height: 50%;
   width: 70px;
   object-fit: cover;
   border-radius: 5px;
@@ -437,6 +444,7 @@ section {
   background-color: #010d16e9;
 }
 
+
 nav button {
   display: none;
 }
@@ -455,9 +463,79 @@ nav button {
 
 /**/
 
+/*Car Info Page*/
 
+.containerGamma {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -100px;
+}
 
+.product {
+  width: 90%;
+  max-width: 750px;
+  display: flex;
+}
 
+.gallery {
+  flex-basis: 53%;
+  background: #241e20;
+  transform: scale(1.08);
+  box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.details {
+  flex-basis: 47%;
+  background: #fff;
+  padding: 40px;
+  padding-left: 60px;
+  box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+  font-size: 13px;
+  font-weight: 500;
+  color: #777;
+  width: 200%
+}
+
+.details h1 {
+  color: #333;
+  font-size: 35px;
+}
+
+.details h2 {
+  color: #555;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.details h3 {
+  color: black;
+  margin-bottom: 20px;
+  ;
+}
+
+.back-button {
+  font: monospace;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 30px;
+  cursor: pointer;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerCar {
+  background: #010d16e9;
+}
 
 
 
@@ -560,6 +638,56 @@ http://css3.bradshawenterprises.com/cfimg/#cfimg1
 
 
 Honda,Nissan,Toyota
+
+/*JS stuff that I don't know if I will use*/
+/*
+const carInfo = {
+  car1: {
+    name: "2020 Honda Civic Type R",
+    description: "This is a description for product 1.",
+    price: "$21,990"
+  },
+  car2: {
+    name: "2019 Volkswagen Jetta",
+    description: "This is a description for product 2.",
+    price: "$19,798"
+  },
+  car3: {
+    name: "2013 Hyundai Sonata",
+    description: "This is a description for product 3.",
+    price: "$9,995"
+  }
+};
+
+const carId = "car1";
+const car = carInfo[carId];
+console.log(car.name); // "Product 1"
+console.log(car.description); // "This is a description for product 1."
+console.log(car.price); // "$50
+
+
+function displayCar(carId) {
+  const car = carInfo[carId];
+  document.getElementById("carName").innerHTML = car.name;
+  document.getElementById("carPrice").innerHTML = car.price;
+  document.getElementById("carDescription").innerHTML = car.description;
+}
+
+*/
+/*
+<div id="carInfo">
+                    <h1 id="carName"></h1>
+                    <h2 id="carPrice"></h2>
+                    <h3>30% OFF</h3>
+                    <p id="carDescription"></p>
+*/
+
+
+
+
+
+
+
 
 
 
