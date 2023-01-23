@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
-  <body class="beta">
+  <body class="beta" style="background-color: #010d16e9;">
     <nav>
       
 
@@ -32,26 +32,18 @@
 
     </nav>
     
-    <div style="position: relative; width: 100%; height: 0; padding-top: 16.0256%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFYFWXnM84&#x2F;watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
-
    <section class="containerBeta">
     <form>
         <i class="material-icons">search</i>
         <input type="text" name="" id="search-item" placeholder="Search products" onkeyup="search()">
     </form>
 
-    <div class="product-list" id="product-list">
+    <div class="car-list" id="car-list">
       <div class="row">
 
         <div class="column">
 
-          <div class="car">
+          <div class="car" data-car="car1">
               <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Honda_Civic_Type_R_%28FK%3B_France%29_front_view.jpg" alt="Honda Civic Type R" style="width:100%">
               <div class="container">
                 <h4><b> 2020 Honda Civic Type R</b></h4>
@@ -68,7 +60,7 @@
 
         <div class="column">
 
-          <div class="car">
+          <div class="car" data-car="car2">
               <img src="https://hips.hearstapps.com/hmg-prod/images/2021-volkswagen-jetta-mmp-1-1597767712.jpg" alt="Avatar" style="width:100%">
               <div class="container">
                 <h4><b>2019 Volkswagen Jetta</b></h4>
@@ -82,9 +74,9 @@
           </div>
         </div>   
 
-        <div class="column">
+        <div class="column" >
 
-          <div class="car">
+          <div class="car" data-car="car3">
               <img src="https://images.automatrix.com/1/103313/Mj4e6z5Mkpb6.jpg" alt="Avatar" style="width:100%">
               <div class="container">
                 <h4><b>2013 Hyundai Sonata</b></h4>
@@ -97,7 +89,7 @@
 
         <div class="column">      
       
-          <div class="car">
+          <div class="car" data-car="car4">
               <img src="https://s3.us-east-2.amazonaws.com/dealer-inspire-vps-vehicle-images/11001082/JN1EV7AR2LM252670/2139eb2b478b8e8086b6831137931b60.jpg" alt="Avatar" style="width:100%">
               <div class="container">
                 <h4><b>2020 INFINITI Q50</b></h4>
@@ -111,7 +103,7 @@
 
         <div class="column">
 
-          <div class="car">
+          <div class="car" data-car="car5">
             <img src="https://content.homenetiol.com/2000292/2143540/0x0/548210f531294c7abb151dd05578a948.jpg" alt="Avatar" style="width:100%">
             <div class="container">
               <h4><b>2017 Honda Ridgeline</b></h4>
@@ -127,7 +119,7 @@
         
         <div class="column">
   
-          <div class="car">
+          <div class="car" data-car="car6">
             <img src="https://i.ytimg.com/vi/1VkQXW7_fU4/maxresdefault.jpg" alt="Avatar" style="width:100%">
             <div class="container">
               <h4><b>2015 Jeep Renegade</b></h4>
@@ -143,8 +135,8 @@
         
         <div class="column">
 
-          <div class="car">
-            <img src="https://static.foxdealer.com/513/2019/10/2019-Chevy-Equinox-Pacific-Blue-Metallic-side-view_o.jpg" alt="Avatar" style="width:100%">
+          <div class="car" data-car="car7">
+            <img src="https://media.ed.edmunds-media.com/chevrolet/equinox/2022/oem/2022_chevrolet_equinox_4dr-suv_premier_fq_oem_1_1600.jpg" alt="Avatar" style="width:100%">
             <div class="container">
               <h4><b>2019 Chevrolet Equinox</b></h4>
               <h5><s>$19,995</s></h5>
@@ -157,8 +149,8 @@
         
         <div class="column">
 
-          <div class="car">
-            <img src="https://content.homenetiol.com/2000292/2143540/0x0/fecda5c5af3741c799d63c2b02dc51b6.jpg" alt="Avatar" style="width:100%" 
+          <div class="car" data-car="car8">
+            <img src="https://content.homenetiol.com/2000292/2143540/0x0/fecda5c5af3741c799d63c2b02dc51b6.jpg" alt="Avatar" style="width:100%">
             <div class="container">
               <h4><b>2019 Honda Passport</b></h4>
               <h4>Sport FWD</h4>
@@ -171,7 +163,7 @@
         
         <div class="column">
 
-          <div class="car">
+          <div class="car" data-car="car9">
             <img src="https://i.ytimg.com/vi/aNBA33D8DcA/maxresdefault.jpg" alt="Avatar" style="width:100%">
             <div class="container">
               <h4><b>2021 Nissan Rogue</b></h4>
@@ -186,10 +178,10 @@
 
         <div class="column">          
   
-          <div class="car">
+          <div class="car" data-car="car10">
             <img src="https://images.hgmsites.net/lrg/2019-honda-accord-sedan-ex-1-5t-cvt-angular-front-exterior-view_100692554_l.jpg" alt="Avatar" style="width:100%">
             <div class="container">
-              <h3><b>2019 Honda Accord</b></h3>
+              <h4><b>2019 Honda Accord</b></h4>
               <h4>EX-L 1.5T CVT</h4>
               <h5><s>$25,531</s></h5>
               <h5>$24,000</h5>
@@ -201,7 +193,7 @@
 
         <div class="column">
   
-            <div class="car">
+            <div class="car" data-car="car11">
               <img src="https://s3.us-east-2.amazonaws.com/dealer-inspire-vps-vehicle-images/11002892/SALWR2RK7JA407608/054214f5619e9e28c6056a7daa58f1f6.jpg" alt="Avatar" style="width:100%">
               <div class="container">
                 <h4><b>2018 Land Rover Range Rover Sport</b></h4>
@@ -214,7 +206,7 @@
 
         <div class="column">
 
-            <div class="car">
+            <div class="car" data-car="car12">
               <img src="https://blogmedia.dealerfire.com/wp-content/uploads/sites/1027/2020/08/2021-Ford-F-150-Color-Stone-Gray_o.jpg" alt="Avatar" style="width:100%">
               <div class="container">
                 <h4><b>2020 Ford F-150</b></h4>
@@ -227,7 +219,7 @@
 
         <div class="column">
   
-            <div class="car">
+            <div class="car" data-car="car13">
               <img src="https://di-uploads-pod11.dealerinspire.com/hollywoodchryslerjeep/uploads/2019/10/2020-jeep-gladiator-first-drive.jpg" alt="Avatar" style="width:100%">
               <div class="container">
                 <h4><b>2020 Jeep Gladiator</b></h4>
@@ -242,7 +234,7 @@
 
         <div class="column">
   
-            <div class="car">
+            <div class="car" data-car="car14">
               <img src="https://cdn.jdpower.com/Models/640x480/2021-Ram-1500-HFE.jpg" alt="Avatar" style="width:100%">
               <div class="container">
                 <h4><b>2021 Ram 1500</b></h4>
@@ -255,12 +247,13 @@
 
         <div class="column">
   
-          <div class="car">
+          <div class="car" data-car="car15">
             <img src="https://www.youngernissan.com/blogs/52/wp-content/uploads/2017/02/2017_Nissan_TITAN_PRO_4X_modified_1.jpg" alt="Avatar" style="width:100%">
             <div class="container">
               <h4><b>2017 Nissan Titan</b></h4>
               <h5><s>$25,995</s></h5>
-              <h5>$23,455</h5>            <p><i class="material-icons">local_gas_station</i>64,281 miles</p>
+              <h5>$23,455</h5>
+              <p><i class="material-icons">local_gas_station</i>64,281 miles</p>
               <p><i class="material-icons">format_paint</i>Black exterior, Black interior</p>
               <pfiller>.<pfiller><br>
                 <pfiller>.<pfiller><br>
@@ -270,8 +263,8 @@
 
         <div class="column">
   
-          <div class="car">
-            <img  src="https://static.cargurus.com/images/forsale/2018/02/07/08/41/2018_honda_pilot-pic-8614447571790841498-1024x768.jpeg" alt="Avatar" style="width:100%">
+          <div class="car" data-car="car16">
+            <img src="https://static.cargurus.com/images/forsale/2018/02/07/08/41/2018_honda_pilot-pic-8614447571790841498-1024x768.jpeg" alt="Avatar" style="width:100%">
             <div class="container">
               <h4><b>2018 Honda Pilot</b></h4>
               <h4>EX AWD</h4>
@@ -284,7 +277,7 @@
 
       <div class="column">
   
-        <div class="car">
+        <div class="car" data-car="car17">
           <img src="https://content.homenetiol.com/2000292/2143540/0x0/4e8cdde8c05442e48fdb508366d8a8f4.jpg" alt="Avatar" style="width:100%">
           <div class="container">
             <h4><b>2016 Honda Fit</b></h4>
@@ -298,7 +291,7 @@
 
     <div class="column">
   
-      <div class="car">
+      <div class="car" data-car="car18">
         <img src="https://blog.consumerguide.com/wp-content/uploads/sites/2/2019/08/20190610_1735400.jpg" alt="Avatar" style="width:100%">
         <div class="container">
           <h4><b>2019 Nissan Altima</b></h4>
@@ -312,7 +305,7 @@
 
   <div class="column">
   
-    <div class="car">
+    <div class="car" data-car="car19">
       <img src="https://content.homenetiol.com/2000292/2195320/0x0/870a9762a10a42d1946ec29966051055.jpg" alt="Avatar" style="width:100%">
       <div class="container">
         <h4><b>2018 Nissan Pathfinder</b></h4>
@@ -326,7 +319,7 @@
 
 <div class="column">
   
-  <div class="car">
+  <div class="car" data-car="car20">
     <img src="https://images.hgmsites.net/hug/2021-nissan-versa_100770609_h.jpg" alt="Avatar" style="width:100%">
     <div class="container">
       <h4><b>2021 Nissan Versa</b></h4>
@@ -340,7 +333,7 @@
 
 <div class="column">
   
-  <div class="car">
+  <div class="car" data-car="car21">
     <img src="https://platform.cstatic-images.com/in/v2/1761bc7a-a795-56a6-bbd7-23ecc45abd05/d50b200a-aeb0-4a92-a7e5-5578a50d5472/ZvKDd5q2pFsFC3vMdmbdmavb9e4.jpg" alt="Avatar" style="width:100%">
     <div class="container">
       <h4><b>2018 Volvo S60</b></h4>
@@ -354,7 +347,7 @@
 
 <div class="column">
   
-  <div class="car">
+  <div class="car" data-car="car22">
     <img src="https://www.southeastautoshowroom.com/galleria_images/990/990_p3_l.jpg" alt="Avatar" style="width:100%">
     <div class="container">
       <h4><b>2019 Volvo XC60</b></h4>
@@ -368,26 +361,28 @@
 
 <div class="column">
   
-  <div class="car">
-    <img src="https://cdn.jdpower.com/Models/640x480/2021-Ram-1500-HFE.jpg" alt="Avatar" style="width:100%">
+  <div class="car" data-car="car23">
+    <img src="https://d2q97jj8nilsnk.cloudfront.net/images/IMG_0452.jpg" alt="Avatar" style="width:100%">
     <div class="container">
-      <h4><b>2021 Ram 1500</b></h4>
-      <h5>$35,995</h5>
-      <p><i class="material-icons">local_gas_station</i>31,620 miles</p>
-      <p><i class="material-icons">format_paint</i>Red exterior, Black interior</p>
+      <h4><b>2021 Tesla Model 3</b></h4>
+      <h4>Standard Range Plus RWD</h4>
+      <h5>$36,999</h5>
+      <p><i class="material-icons">local_gas_station</i>41,024 miles</p>
+      <p><i class="material-icons">format_paint</i>White exterior, Black interior</p>
     </div>
   </div>
 </div>
 
 <div class="column">
   
-  <div class="car">
-    <img src="https://cdn.jdpower.com/Models/640x480/2021-Ram-1500-HFE.jpg" alt="Avatar" style="width:100%">
+  <div class="car" data-car="car24">
+    <img src="https://uploads.onlyusedtesla.com/wp-content/uploads/2022/01/11124756/C-V-IMG_0934v-1536x842.jpg" alt="Avatar" style="width:100%">
     <div class="container">
-      <h4><b>2021 Ram 1500</b></h4>
-      <h5>$35,995</h5>
-      <p><i class="material-icons">local_gas_station</i>31,620 miles</p>
-      <p><i class="material-icons">format_paint</i>Red exterior, Black interior</p>
+      <h4><b>2022 Tesla Model Y</b></h4>
+      <h4>Long Range AWD</h4>
+      <h5>$51,999</h5>
+      <p><i class="material-icons">local_gas_station</i>116 miles</p>
+      <p><i class="material-icons">format_paint</i>Blue exterior, Black interior</p>
     </div>
   </div>
 </div>
@@ -413,40 +408,6 @@
 
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
